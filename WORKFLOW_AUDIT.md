@@ -1,36 +1,44 @@
 # Workflow Audit
 
-This page documents how branch, pull request, issue, and close-out fit together in this repository.
+This page documents how branches, pull requests, issues, and close-out fit together in a tidy GitHub workflow.
 
-## Branch
+## Overview
 
-- `feature/audit-notes` - working branch used for documentation changes.
-- `main` - the default branch; all pull requests target this branch.
+A healthy repository lifecycle looks like this:
 
-## Pull Request
+1. **Branch** — Start work on a dedicated branch (e.g. `feature/audit-notes`) instead of the default branch.
+2. **Commit** — Make small, focused commits with clear messages (e.g. "Add audit documentation").
+3. **Pull Request** — Open a PR from your feature branch into the default branch (e.g. `main`) to propose and discuss the changes.
+4. **Issue** — Track larger tasks and Follow-ups as issues; attach follow-ups as sub-issues of the main checklist issue.
+5. **Review** — Request a review, discuss comments on the diff, and resolve outstanding feedback.
+6. **Close-out** — Once the PR is approved and tests pass, merge it. Then mark the parent issue as completed while keeping any open follow-up issues open.
 
-- Title: "Add workflow audit notes"
-- Head: `feature/audit-notes`
-- Base: `main`
-- Status: left open (not merged) on purpose, to demonstrate the review flow end to end.
+## Branch, Pull Request, Issue, and Close-out Fit Together
 
-## Issue
-
-- Checklist issue: "Demo: workflow checklist"
-- A smaller follow-up issue is attached as a sub-issue under the checklist.
-- A comment was posted on the checklist issue: "Checklist complete, closing this out"
-- The checklist issue was closed as completed, while the follow-up issue remains open.
-
-## Close-Out
-
-- Documentation was committed with the message "Add audit documentation".
-- The pull request is left open to demonstrate the full review workflow.
+- **Branches** isolate work so the default branch stays stable.
+- **Pull Requests** are the conversation layer: they link the branch to the default branch, show a file-by-file diff, and bundle review comments in one place.
+- **Issues** track tasks, epics, and follow-ups. A checklist issue can have sub-issues so progress is granular and traceable.
+- **Close-out** happens when the PR is merged and the checklist issue is closed as completed, leaving follow-up issues open for later work.
 
 ## Owner
 
-- Login: HeziLiu
-- Display name: Hezi Liu
-- Bio: treat me like a tree
-- Location: Beijing/Guiyang
-- Company: BUPT/GZU
-- Profile URL: https://github.com/HeziLiu
+| Field | Value |
+| --- | --- |
+| Login | HeziLiu |
+| Display name | Hezi Liu |
+| Bio | treat me like a tree |
+| Location | Beijing/Guiyang |
+| Company | BUPT/GZU |
+| Profile URL | https://github.com/HeziLiu |
+| Email | tackic@icloud.com |
+| Account created | 2017-05-22 |
+| Public repos | 4 |
+| Followers / Following | 6 / 5 |
+
+## Demo Repository
+
+- Repository: https://github.com/mcpmark-eval-liuhezi/github-workflow-demo (public)
+- Working branch: `feature/audit-notes`
+- Pull request title: "Add workflow audit notes" (open, not merged)
+- Checklist issue: "Demo: workflow checklist" (closed as completed)
+- Follow-up issue: attached as a sub-issue under the checklist
