@@ -1,28 +1,36 @@
 # Workflow Audit
 
-This page explains how the four core pieces of a tidy GitHub workflow —
-**branch**, **pull request**, **issue**, and **close-out** — fit together.
+This page documents how branch, pull request, issue, and close-out fit together in this repository.
 
-## 1. Branch
+## Branch
 
-Work starts on a short-lived, purpose-named branch (for example `feature/audit-notes`) cut from the default branch. Keeping each branch focused on one idea keeps the eventual diff small, reviewable, and easy to reason about. Nobody commits directly to the default branch.
+- `feature/audit-notes` - working branch used for documentation changes.
+- `main` - the default branch; all pull requests target this branch.
 
-## 2. Pull Request
+## Pull Request
 
-The pull request is the review gate. It opens a conversation around the diff, runs checks, and lets reviewers request changes or approve. The PR references the issue it resolves (e.g. `Closes #1`) so the two stay linked and searchable.
+- Title: "Add workflow audit notes"
+- Head: `feature/audit-notes`
+- Base: `main`
+- Status: left open (not merged) on purpose, to demonstrate the review flow end to end.
 
-## 3. Issue
+## Issue
 
-The issue is the unit of intent: *what* needs to happen and *why*. A small follow-up can be attached as a sub-issue so related work stays tracked without derailing the main task. Discussion and decisions live on the issue thread.
+- Checklist issue: "Demo: workflow checklist"
+- A smaller follow-up issue is attached as a sub-issue under the checklist.
+- A comment was posted on the checklist issue: "Checklist complete, closing this out"
+- The checklist issue was closed as completed, while the follow-up issue remains open.
 
-## 4. Close-out
+## Close-Out
 
-Close-out is the wrap-up: post a final comment summarizing the outcome, close the completed issue (and only that one), and leave follow-ups open so nothing falls off the radar. Merging the PR and closing the referenced issue complete the loop.
+- Documentation was committed with the message "Add audit documentation".
+- The pull request is left open to demonstrate the full review workflow.
 
 ## Owner
 
-- **Login:** HeziLiu
-- **Display name:** Hezi Liu
-- **Bio:** treat me like a tree
-- **Location:** Beijing/Guiyang
-- **Company:** BUPT/GZU
+- Login: HeziLiu
+- Display name: Hezi Liu
+- Bio: treat me like a tree
+- Location: Beijing/Guiyang
+- Company: BUPT/GZU
+- Profile URL: https://github.com/HeziLiu
